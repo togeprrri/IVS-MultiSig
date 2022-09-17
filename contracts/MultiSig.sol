@@ -74,6 +74,7 @@ contract MultiSig {
             !ownersVotesForCandidate[msg.sender][_candidate], 
             "Owner has already voted for this candidate"
             );
+        require(candidatesForOwner[_candidate], "This address is not the candidate");
         
         if(_vote){
             candidatesVotesCount[_candidate]._for++;
@@ -88,10 +89,9 @@ contract MultiSig {
         else{
             candidatesVotesCount[_candidate]._against++;
 
-            if(candidatesVotesCount[_candidate]._against > ownersCount/2){
+            if(candidatesVotesCount[_candidate]._against >= ownersCount/2){
                 candidatesForOwner[_candidate] = false;
                 delete(candidatesVotesCount[_candidate]);
-                ownersCount++;
             }
         }
     }
@@ -133,7 +133,7 @@ contract MultiSig {
         else{
             transactionsVotesCount[_transactionID]._against++;
 
-            if(transactionsVotesCount[_transactionID]._against > ownersCount/2){
+            if(transactionsVotesCount[_transactionID]._against >= ownersCount/2){
                 transactions[_transactionID]._status = "Denied";
             }
         }

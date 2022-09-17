@@ -1,0 +1,73 @@
+await mus.candidatesVotesCount(a1.address);
+await mus.ownersCount();
+await mus.connect(a1).voteForTheCandidate(a2.address, true)
+await mus.voteForTheCandidate(a2.address, true)
+await mus.connect(a2).becomeCandidate()
+await mus.ownersCount();
+await mus.connect(a1).voteForTheCandidate(a2.address, false)
+await mus.voteForTheCandidate(a2.address, true)
+await mus.voteForTheCandidate(a1.address, true)
+await mus.connect(a2).becomeCandidate()
+await mus.ownersCount();
+await mus.voteForTheCandidate(a1.address, true)
+await mus.connect(a1).becomeCandidate()
+await mus.ownersCount();
+const mus = await MultiSig.attach("0xa513E6E4b8f2a923D98304ec87F64353C4D5C853");
+const MultiSig = await ethers.getContractFactory("MultiSig");
+const [deployer, a1, a2, a3, a4] = await ethers.getSigners();
+.editor
+.help
+await mus.owners(deployer.address)
+await mus.owners(a3.address)
+await mus.owners(a2.address)
+await mus.owners(a1.address)
+await mus.ownersCount();
+await mus.connect(a1).voteForTheCandidate(a2.address, true);
+await mus.voteForTheCandidate(a2.address, true);
+await mus.connect(a2).becomeCandidate();
+await mus.candidatesForOwner(a2.address);
+await mus.connect(a1).voteForTheCandidate(a2.address, false);
+await mus.voteForTheCandidate(a2.address, true);
+await mus.connect(a2).becomeCandidate();
+await mus.ownersCount()
+await mus.voteForTheCandidate(a1.address, true)
+await mus.connect(a1).becomeCandidate();
+await mus.ownersCount();
+const mus = await MultiSig.attach("0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9");
+const MultiSig = await ethers.getContractFactory("MultiSig");
+const [deployer, a1, a2, a3, a4] = await ethers.getSigners();
+await mus.candidatesVotesCount(a2.address);
+await mus.candidatesForOwner(a2.address);
+await mus.ownersCount();
+await mus.connect(a1).voteForTheCandidate(a2.address, false);
+await mus.ownersCount();
+await mus.voteForTheCandidate(a2.address, true);
+await mus.candidatesForOwner(a2.address);
+await mus.connect(a2).becomeCandidate();
+await mus.ownersCount();
+await mus.voteForTheCandidate(a1.address, true);
+await mus.ownersVotesForCandidate(deployer.address, a1.address);
+await mus.ownersVotesFor(deployer.address, a1.address);
+await mus.candidatesVotesCount(a1.address);
+await mus.candidatesForOwner(a1.address);
+mus.candidatesForOwner();
+await mus.candidatesForOwner[a1.address];
+await mus.candidatesForOwner[a1];
+await mus.candidatesForOwner[a1]
+await mus.candidatesVotesCount[a1]._for()
+await mus.candidatesVotesCount[a1]._for
+await mus.candidatesVotesCount[a1]();
+await mus.candidatesVotesCount[a1]
+await mus.ownersCount();
+await mus.voteForTheCandidate(a1, true);
+await mus.connect(a1).becomeCandidate();
+await mus.becomeCandidate();
+await mus.ownersCount();
+await mus.owners();
+await mus.checkBalance();
+const mus = await MultiSig.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const ms = await MultiSig.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3");
+const MultiSig = await ethers.getContractFactory("MultiSig");
+const ms = await MultiSig.attach("0x5FbDB2315678afecb367f032d93F642f64180aa3");
+multiSig
+const [deployer, a1, a2, a3, a4] = await ethers.getSigners();
