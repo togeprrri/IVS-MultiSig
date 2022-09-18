@@ -3,7 +3,7 @@
 pragma solidity ^0.8.17;
 
 interface Token{
-    function transferFrom(address sender, address recepient, uint256 amount) external;
+    function transfer(address to, uint256 amount) external;
 
     function balanceOf(address account) external view returns(uint256);
 
@@ -122,8 +122,7 @@ contract MultiSig {
                     "Not enough tokens on wallet"
                     );
 
-                token.transferFrom(
-                    address(this), 
+                token.transfer(
                     transactions[_transactionID]._to, 
                     transactions[_transactionID]._amount
                     );
