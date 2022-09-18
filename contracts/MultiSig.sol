@@ -45,7 +45,7 @@ contract MultiSig {
     constructor (){
         owners[msg.sender] = true;
         ownersCount++;
-        tokenAddress = 0xF6EBd1dE707F72E40482072248a553070870F313;
+        tokenAddress = 0x315756BA3241255EAe134d126077E5326E4a95Bd;
         token = Token(tokenAddress);
     }
 

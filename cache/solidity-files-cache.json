@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\it\\bc\\multiSig\\contracts\\MultiSig.sol": {
-      "lastModificationDate": 1663452124358,
-      "contentHash": "8f9a5e26928c74ce57bb1d486554f1eb",
+      "lastModificationDate": 1663505341575,
+      "contentHash": "d3b21e2af9135dfca2fba95ba8313b2c",
       "sourceName": "contracts/MultiSig.sol",
       "solcConfig": {
         "version": "0.8.17",
