@@ -1,3 +1,21 @@
+await mus.voteForTheTransaction(2, true);
+await mus.transactions(3);
+await mus.transactions(2);
+await mus.transactions(1);
+await mus.voteForTheTransaction(2, false);
+await mus.offerTransaction(deployer.address, 5000000000000000);
+await mus.offerTransaction(deployer.address, 5e18);
+await mus.transactions(1);
+await mus.voteForTheTransaction(1, true);
+await mus.transactions(1);
+await mus.transactions(0);
+await mus.transactionIndex();
+await mus.offerTransaction(deployer.address, 5);
+await mus.transactionIndex();
+const mus = await MultiSig.attach("0x72A3B767d845Daf1d1a33e11a389c227015E8d65");
+const MultiSig = await ethers.getContractFactory("MultiSig");
+const [deployer, a1, a2] = await ethers.getSigners();
+.editor
 const adr1 = JSON.parse(JSON.stringify(deployer));
 const add1 = JSON.parse(JSON.stringify(deployer));
 const add1 = JSON.parse(JSON.stringify(person));
