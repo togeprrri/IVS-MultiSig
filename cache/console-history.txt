@@ -1,3 +1,41 @@
+const adr1 = JSON.parse(JSON.stringify(deployer));
+const add1 = JSON.parse(JSON.stringify(deployer));
+const add1 = JSON.parse(JSON.stringify(person));
+"0x98aC4b4eB4Ba661da7d3F575E51398498115Acf9"
+deployer.address = 
+ad1.address = "0x1b675750AbedBD8EaEd0A7B5364da87Fd069E2E9"
+const ad1 = deployer
+const a1 = deployer
+a1
+await mus.tokenAddress();
+await mus.checkBalance();
+const mus = await MultiSig.attach("0x72A3B767d845Daf1d1a33e11a389c227015E8d65");
+const MultiSig = await ethers.getContractFactory("MultiSig");
+const [deployer, a1, a2] = await ethers.getSigners();
+.editor
+const [deployer, a1, a2, a3] = await ethers.getSigners();
+await mus1.checkBalance();
+await mus1.becomeCandidate();
+mus1 = await mus.connect(a1);
+await mus1 = mus.connect(a1);
+await mus.signer
+await mus.signer();
+s1 = new ethers.Signer()
+ethers.Signer()
+ethers
+await ethers.Signer
+ethers.Signer
+s1 = new ethers.Signer(a1);
+await mus.connect(a1).becomeCandidate();
+await mus.connect(a1).checkBalance();
+await mus.checkBalance();
+const a1 = "0xE72418F04D87416AC71145B36452a8Afd2DeC083";
+await mus.tokenAddress();
+await mus.changeTokenAddress("0x4d9dA7E0038113C03bCd5a6166121c0a3A5a3652");
+const mus = await MultiSig.attach("0x72A3B767d845Daf1d1a33e11a389c227015E8d65");
+const MultiSig = await ethers.getContractFactory("MultiSig");
+const [deployer] = await ethers.getSigners();
+.editor
 await mus.candidatesVotesCount(a1.address);
 await mus.ownersCount();
 await mus.connect(a1).voteForTheCandidate(a2.address, true)
